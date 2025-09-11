@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C9E7F8">
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:padding="20dp"
+        android:text="Nota 1"
+        android:background="#E2F85B8E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:padding="20dp"
+        android:text="Nota 2"
+        android:background="#E2F85B8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Nota 3"
+        android:layout_marginStart="50dp"
+        app:layout_goneMarginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:background="#E2F85B8E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText10" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Nota 4"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="#E2F85B8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText11" />
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="100dp"
+        android:height="65dp"
+        android:background="#E2F85B8E"
+        android:text="  Numero de faltas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="#1969AB"
+        android:text="Calcular"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        app:cornerRadius="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText12"
+        tools:layout_editor_absoluteX="50dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aluno foi aprovado!"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
